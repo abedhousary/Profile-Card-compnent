@@ -1,0 +1,120 @@
+* { 
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root { 
+    --darkcyan:hsl(185, 75%, 39%);
+    --darkdesturated:hsl(229, 23%, 23%);
+    --darkgrayish:hsl(227, 10%, 46%);
+    --darkgray:hsl(0, 0%, 59%);
+}
+
+body {
+    background-color: var(--darkcyan);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.top-left {
+    position: absolute;
+    top: -500px;
+    left: -282px;
+    
+
+}
+.bottom-right {
+    position: absolute;
+    bottom: -600px;
+    right: -265px;
+}
+
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 1020;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+.container .top-holder {
+    width: 100%;
+    height: 150px;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .avatar {
+    width: 100px;
+    height: 100px;
+    background-image:url(./images/image-victor.jpg);
+    border-radius: 50%;
+    background-size: contain;
+    border:5px solid white;
+    position: absolute;
+    bottom: -50px;
+}
+.container .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 65px;
+}
+.profile .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--darkdesturated);
+}
+.profile .age {
+    color: var(--darkgray);
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.container .location {
+    margin-top: 10px;
+    color: var(--darkgrayish);
+}
+
+.container .socials-container {
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.socials-container .data-shower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data-shower .counter {
+    color: var(--darkdesturated);
+    font-weight: 700;
+    font-size: 18px;
+}
+.data-shower .type {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--darkgray);
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+.data-shower {
+    margin: 30px;
+}
